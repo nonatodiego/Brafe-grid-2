@@ -4,10 +4,11 @@
 	<title>Brafé 2</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/grid.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
+<body>		
 	
 	<header>
 		<div class="header-informacoes">
@@ -94,6 +95,16 @@
 		<p>Este é um projeto da Origamid. Mais em origamid.com</p>
 		<p>Praia de Botafogo, 300, 5º andar - Botafogo - Rio de Janeiro</p>
 	</footer>
+
+	<div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <script>
+        $(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
+	
 	
 </body>
 </html>
